@@ -1,0 +1,64 @@
+// script.js
+
+let timerInterval;
+let minutes = 25;
+let seconds = 0;
+let isRunning = false;
+
+const startBtn = document.getElementById('start-btn');
+const pauseBtn = document.getElementById('pause-btn');
+const resetBtn = document.getElementById('reset-btn');
+const minutesElement = document.getElementById('minutes');
+const secondsElement = document.getElementById('seconds');
+
+startBtn.addEventListener('click', startTimer);
+pauseBtn.addEventListener('click', pauseTimer);
+resetBtn.addEventListener('click', resetTimer);
+
+function startTimer() {
+    if (!isRunning) {
+        isRunning = true;
+        timerInterval = setInterval(() => {
+            seconds--;
+            if (seconds < 0) {
+                minutes--;
+                seconds = 59;
+            }
+            if (minutes < 0) {
+                minutes = 24;
+                seconds = 59;
+            }
+            updateTimerDisplay();
+            if (minutes === 0 && seconds === 0) {
+                alert('Pomodoro timer has finished!');
+                resetTimer();
+            }
+        }, 1000);
+        startBtn.disabled = true;
+        pauseBtn.disabled = false;
+    }
+}
+
+function pauseTimer() {
+    clearInterval(timerInterval);
+    isRunning = false;
+    startBtn.disabled = false;
+    pauseBtn.disabled = true;
+}
+
+function resetTimer() {
+    minutes = 25;
+    seconds = 0;
+    updateTimerDisplay();
+    clearInterval(timerInterval);
+    isRunning = false;
+    startBtn.disabled = false;
+    pauseBtn.disabled = true;
+}
+
+function updateTimerDisplay() {
+    minutesElement.textContent = minutes.toString().padStart(2, '0');
+    secondsElement.textContent = seconds.toString().padStart(2, '0');
+}
+
+updateTimerDisplay();

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "VdxQIUqFGcI=",
+  "success": true,
+  "projectFilePath": "/Users/joanne/my-app/app/app 2/WebApplication1/WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "/Users/joanne/.nuget/packages/microsoft.dotnet.ilcompiler/8.0.7/microsoft.dotnet.ilcompiler.8.0.7.nupkg.sha512",
+    "/Users/joanne/.nuget/packages/microsoft.net.illink.tasks/8.0.7/microsoft.net.illink.tasks.8.0.7.nupkg.sha512",
+    "/Users/joanne/.nuget/packages/runtime.osx-x64.microsoft.dotnet.ilcompiler/8.0.7/runtime.osx-x64.microsoft.dotnet.ilcompiler.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,31 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notetaking Pad App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Notetaking Pad App</h1>
+    <div class="notetaking-pad-container">
+        <div class="sidebar">
+            <h2>Pages</h2>
+            <ul id="page-list"></ul>
+            <button id="new-page-btn">New Page</button>
+        </div>
+        <div class="editor-container">
+            <div class="editor-toolbar">
+                <button id="bold-btn">Bold</button>
+                <button id="italic-btn">Italic</button>
+                <button id="link-btn">Link</button>
+            </div>
+            <div id="editor" contenteditable="true"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

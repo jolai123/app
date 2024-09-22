@@ -1,0 +1,65 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.notetaking-pad-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+#page-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#page-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#page-list li:last-child {
+    border-bottom: none;
+}
+
+.editor-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.editor-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.editor-toolbar button {
+    margin: 10px;
+}
+
+#editor {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    border: none;
+    outline: none;
+    resize: vertical;
+}
