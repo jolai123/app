@@ -29,11 +29,17 @@ Welcome to the **Productivity App**! This all-in-one application is designed to 
 - Check off tasks as you finish them.
 - Sort tasks by categories or due dates.
 
+## Technologies stack
+- React
+- Node.js
+- Express.js
+- MongoDB
+
 ## ⚙️ Installation
 
 To get started, clone this repository and install the necessary dependencies:
 
 ```bash
-git clone https://github.com/yourusername/productivity-app.git
+git clone https://github.com/jolai123/productivity-app.git
 cd productivity-app
 npm install
